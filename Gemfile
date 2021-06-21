@@ -4,11 +4,11 @@ source 'https://rubygems.org'
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { git: 'https://github.com/decidim/decidim.git', branch: 'release/0.23-stable' }
+DECIDIM_VERSION = '~> 0.19.0'
 
 gem 'daemons'
 gem 'delayed_job_active_record'
-gem 'puma', '~> 4.0'
+gem 'puma', '~> 3.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'whenever'
 
@@ -17,13 +17,13 @@ gem 'openssl'
 
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-consultations', DECIDIM_VERSION
-gem 'decidim-verifications-custom_csv_census', git: "https://github.com/CodiTramuntana/decidim-verifications-custom_csv_census.git", tag: "v0.0.2"
+gem 'decidim-verifications-custom_csv_census', git: "https://github.com/CodiTramuntana/decidim-verifications-custom_csv_census.git", tag: "v0.0.1"
 gem "decidim-term_customizer", git: "https://github.com/CodiTramuntana/decidim-module-term_customizer.git"
 
 group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'byebug', platform: :mri
+  gem 'byebug'
 end
 
 group :development do
