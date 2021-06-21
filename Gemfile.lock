@@ -15,9 +15,12 @@ GIT
       decidim (>= 0.15.0)
       decidim-admin (>= 0.15.0)
       decidim-verifications (>= 0.15.0)
+
+GIT
   remote: https://github.com/CodiTramuntana/decidim.git
   revision: c52fae50438a218d136d6d0385b62d7e4bc0eef5
   branch: release/0.20-stable
+  tag: v0.0.1
   specs:
     decidim (0.20.1)
       decidim-accountability (= 0.20.1)
@@ -75,6 +78,10 @@ GIT
     decidim-comments (0.20.1)
       decidim-core (= 0.20.1)
       jquery-rails (~> 4.3)
+    decidim-consultations (0.20.1)
+      decidim-admin (= 0.20.1)
+      decidim-comments (= 0.20.1)
+      decidim-core (= 0.20.1)
     decidim-core (0.20.1)
       active_link_to (~> 1.0)
       anchored (>= 1.1.0)
@@ -790,13 +797,11 @@ DEPENDENCIES
   binding_of_caller
   byebug
   daemons
-  decidim (~> 0.19.0)
-  decidim-consultations (~> 0.19.0)
-  decidim-dev (~> 0.19.0)
+  decidim!
+  decidim-consultations!
+  decidim-dev!
   decidim-term_customizer!
   decidim-verifications-custom_csv_census!
-  decidim!
-  decidim-dev!
   delayed_job_active_record
   faker (~> 1.8.4)
   figaro (>= 1.1.1)
