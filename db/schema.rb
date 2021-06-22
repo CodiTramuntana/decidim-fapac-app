@@ -1401,6 +1401,8 @@ ActiveRecord::Schema.define(version: 2021_06_21_063252) do
     t.text "value"
     t.bigint "translation_set_id", null: false
     t.index ["translation_set_id"], name: "decidim_term_customizer_translation_translation_set"
+  end
+
   create_table "decidim_user_blocks", force: :cascade do |t|
     t.bigint "decidim_user_id"
     t.integer "blocking_user_id"
