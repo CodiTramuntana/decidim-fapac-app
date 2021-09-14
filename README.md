@@ -1,5 +1,7 @@
 # DECIDIM-FAPAC-APP
 
+NOTE: this repository is archived and no longer maintaned.
+
 ## Deploying the app
 
 Deploy is located in an external project
